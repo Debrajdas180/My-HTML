@@ -76,5 +76,86 @@
       </tbody>
     </table>
     <!-- example of table -->
+    <form action="backend.php">
+      <div>Name: <input type="text" name="myName" /></div>
+      <br />
+      <div>Role: <input type="text" name="myRole" /></div>
+      <br />
+      <div>Email: <input type="email" name="myEmail" id="" /></div>
+      <br />
+      <div>
+        <input type="date" name="myDate" id="" />
+      </div>
+      <div>Bonus: <input type="number" name="myBonus" id="" /></div>
+      <div>
+        Are you eligible?:
+        <input type="checkbox" name="myEligibilty" id="" checked />
+      </div>
+      <!-- default unchecked r for making by emove the checked  -->
+      <div>
+        Gender: Male<input type="radio" name="myGender" id="" /> Female<input
+          type="radio"
+          name="myGender"
+          id=""
+        />
+        other<input type="radio" name="myGender" id="" />
+      </div>
+      <div>
+        <input type="submit" value="submit Now" />
+      </div>
+      <div>
+        <input type="reset" value="Reset Now" />
+      </div>
+      <div>
+        Write about your self:
+        <textarea name="myText" id="" cols="30" rows="10"></textarea>
+      </div>
+    </form>
+    <!-- example of form  -->
+    <form action="backend.php">
+      <label for="name">Name</label>
+      <div><input type="text" name="myName" id="name" /></div>
+    </form>
+    <!-- example of label -->
+    <label for="MCU">MCU</label>
+    <select name="myMCU" id="MCU">
+      <option value="8051" selected>8051</option>
+      <!-- selected for by default select the option -->
+      <option value="ESP">Espressif</option>
+      <option value="STM">STM32</option>
+      <option value="AVR">ATMEL</option>
+      <option value="PIC">Microchip</option>
+    </select>
+    <!-- example of select -->
+    <br />
+    <span>this is a inline element</span>
+    <span>this is also a inline element</span>
+    <em>this is a inline element</em> <em>this is also a inline element</em>
+
+    <!-- example of inline element -->
+    <div>this is a inline element</div>
+    <div>this is also a inline element</div>
+    <li>this is a inline element</li>
+    <li>this is also a inline element</li>
+    <img src="" alt="" />
+    <!-- img also block element -->
+    <!-- example of block element -->
+    <div id="mainbox" class="redbox"></div>
+    <!-- use emmet for fast write html code -->
+    <!-- emmet take div tag by default -->
+    <div class="class_another"></div>
+    <div id="another"></div>
+    <!-- . use for class and # use for id -->
+    <!-- example of ID & CLASS-->
+    <span class="myclass1 myclass2 myclass3"></span>
+    <span class="myclass1 myclass2 myclass3"></span>
+    <span class="myclass1 myclass2 myclass3"></span>
+    <span class="myclass1 myclass2 myclass3"></span>
+    <!-- span.myclass1.myclass2.myclass3*4 + <tab> to print 4 similar elements using emmet-->
+    <p>This is a &nbsp;&nbsp;&nbsp; paragraph</p>
+    <p>this is an empty character &#8709;</p>
+    <!--example of non breaking spaces -->
+    <!-- &nbsp; &pound; &copy; &lt; &gt; this are html entities -->
+    <!-- <article>,<aside>,<details>,<figcaption>,<figure>,<footer>,<header>,<main>,<mark>,<nav>,<section>,<summary>,<time> -->
   </body>
 </html>

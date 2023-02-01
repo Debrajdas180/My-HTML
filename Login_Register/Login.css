@@ -1,0 +1,170 @@
+body {
+  /* Full height */
+  height: 100%;
+  width: 100vw;
+  /* full form of vw = view port width */
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 5s;
+  transition-timing-function: ease-out;
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-out;
+
+}
+
+@keyframes animate {
+  0% {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg);
+  }
+
+  20% {
+    background-image: url(https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/nxmlubuz0b1qixa29gov);
+  }
+
+  40% {
+    background-image: url(https://bonmasala.com/wp-content/uploads/2022/10/mutton-biriyani-recipe.jpeg);
+  }
+
+  60% {
+    background-image: url(https://assets.cntraveller.in/photos/62d542ee288f80d6ed75ac4d/16:9/w_1024%2Cc_limit/Biryani%2520lead.jpg);
+  }
+
+  80% {
+    background-image: url(https://www.12taste.com/in/wp-content/uploads/2020/04/Biryani-min-scaled.jpg);
+  }
+
+  100% {
+    background-image: url(https://www.newstap.in/h-upload/2023/01/02/1454035-biriyani.jpg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#navbar {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 2px 7px;
+  padding-bottom: 8px;
+}
+
+nav a:hover {
+  color: rgb(114, 17, 17);
+  border: 2px solid;
+  font-size: 2.5rem;
+  transition: 0.3s;
+}
+
+ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+.container {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  display: block;
+  margin: auto;
+  width: 30%;
+
+  animation-name: fadeInLeft;
+  animation-duration: .3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+/* @keyframes zoom {
+  0% {
+    transform: scale(.5,.5);
+  }
+  25%{
+    transform: scale(.625,.625);
+  }
+  50%{
+   transform: scale(.75,.75);
+  }
+  75%{
+    transform: scale(.875,.875);
+  }
+  100%{
+    transform:scale(1,1);
+  }
+
+} */
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-200px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 5px;
+  background:white;
+  margin: auto;
+}
+
+.regitration {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  background-color: rgb(128, 45, 45);
+  padding: 15px 60px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.regitration:hover {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  background-color: white;
+  padding: 15px 60px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.container_signin {
+  color: black;
+  font-size: 2rem;
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+
+.container_signin a {
+  color: rgb(50, 158, 236);
+
+}
